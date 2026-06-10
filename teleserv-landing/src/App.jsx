@@ -1,14 +1,14 @@
 import { FaInstagram, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa'
 import './App.css'
 
-const whatsappNumber = '5500000000000'
-const phoneDisplay = '(00) 00000-0000'
+const whatsappNumber = '5583987200303'
+const phoneDisplay = '(83) 98720-0303'
 const phoneUrl = `tel:${whatsappNumber}`
 const instagramHandle = '@teleserv'
 const instagramUrl = 'https://www.instagram.com/teleserv'
 const whatsappMessage =
-  'Olá, vim pela landing page da Teleserv e quero solicitar uma avaliação para infraestrutura de redes.'
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+  'Olá, vim pelo site da Teleserv e quero solicitar uma avaliação para infraestrutura de redes.'
+const whatsappUrl = `https://wa.me/${83987200303}?text=${encodeURIComponent(
   whatsappMessage,
 )}`
 
