@@ -608,11 +608,47 @@ h3 {
   }
 
   .hero-visual {
-    min-height: 350px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+    border: 1px solid rgba(242, 242, 242, 0.14);
+    border-radius: 8px;
+    background: rgba(242, 242, 242, 0.06);
+  }
+
+  .hero-visual::before {
+    display: none;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    max-width: none;
+    height: 520px;
+    object-fit: contain;
+    object-position: center top;
+    background: #f2f2f2;
+    filter: none;
   }
 
   .signal-card {
-    top: 0;
-    width: 168px;
+    position: static;
+    width: auto;
+    padding: 12px 14px;
+    border-left: 0;
+    border-bottom: 4px solid var(--yellow);
+    border-radius: 0;
+    background: rgba(4, 41, 89, 0.94);
+    box-shadow: none;
+  }
+
+  .signal-card span {
+    font-size: 0.68rem;
+  }
+
+  .signal-card strong {
+    font-size: 0.9rem;
   }
 }
