@@ -1,4 +1,4 @@
-import { FaInstagram, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa'
+import { FaAward, FaBolt, FaInstagram, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa'
 import './App.css'
 
 const whatsappNumber = '5583987200303'
@@ -113,6 +113,26 @@ function App() {
         </div>
       </section>
 
+      <section className="trust-band" aria-label="Experiência e oportunidade limitada">
+        <article>
+          <FaAward aria-hidden="true" />
+          <div>
+            <span>Experiência comprovada</span>
+            <strong>
+              Há mais de 10 anos entregando soluções de conectividade para empresas,
+              condomínios e residências.
+            </strong>
+          </div>
+        </article>
+        <article>
+          <FaBolt aria-hidden="true" />
+          <div>
+            <span>Vagas limitadas</span>
+            <strong>Os atendimentos gratuitos são liberados por ordem de solicitação.</strong>
+          </div>
+        </article>
+      </section>
+
       <section className="section benefits-section" id="beneficios">
         <div className="section-heading">
           <p className="eyebrow">Benefícios</p>
@@ -182,20 +202,12 @@ function App() {
           Envie uma mensagem para iniciar o atendimento, agendar uma visita técnica
           ou pedir uma proposta para sua empresa.
         </p>
-        <div className="decision-cues" aria-label="Reforços para tomada de decisão">
-          <article>
-            <span>Autoridade</span>
-            <strong>
-              Há mais de 10 anos entregando soluções de conectividade para empresas,
-              condomínios e residências.
-            </strong>
-          </article>
-          <article>
-            <span>Escassez</span>
-            <strong>
-              Diagnóstico técnico gratuito para os primeiros 10 atendimentos do mês.
-            </strong>
-          </article>
+        <div className="conversion-offer" aria-label="Oferta e credibilidade">
+          <div className="offer-highlight">
+            <span>Condição especial</span>
+            <strong>Diagnóstico técnico gratuito para os primeiros 10 atendimentos do mês.</strong>
+            <p>Garanta uma análise inicial da sua rede antes de decidir o próximo passo.</p>
+          </div>
         </div>
         <CtaLink>Chamar a Teleserv no WhatsApp</CtaLink>
         <div className="contact-links" aria-label="Outros canais de contato">
