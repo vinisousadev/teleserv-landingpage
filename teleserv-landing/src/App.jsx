@@ -3,12 +3,12 @@ import './App.css'
 
 const whatsappNumber = '5583987200303'
 const phoneDisplay = '(83) 98720-0303'
-const phoneUrl = `tel:${whatsappNumber}`
+const phoneUrl = `tel:+${whatsappNumber}`
 const instagramHandle = '@teleserv'
 const instagramUrl = 'https://www.instagram.com/teleserv'
 const whatsappMessage =
   'Olá, vim pelo site da Teleserv e quero solicitar uma avaliação para infraestrutura de redes.'
-const whatsappUrl = `https://wa.me/${83987200303}?text=${encodeURIComponent(
+const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
   whatsappMessage,
 )}`
 
@@ -182,6 +182,21 @@ function App() {
           Envie uma mensagem para iniciar o atendimento, agendar uma visita técnica
           ou pedir uma proposta para sua empresa.
         </p>
+        <div className="decision-cues" aria-label="Reforços para tomada de decisão">
+          <article>
+            <span>Autoridade</span>
+            <strong>
+              Há mais de 10 anos entregando soluções de conectividade para empresas,
+              condomínios e residências.
+            </strong>
+          </article>
+          <article>
+            <span>Escassez</span>
+            <strong>
+              Diagnóstico técnico gratuito para os primeiros 10 atendimentos do mês.
+            </strong>
+          </article>
+        </div>
         <CtaLink>Chamar a Teleserv no WhatsApp</CtaLink>
         <div className="contact-links" aria-label="Outros canais de contato">
           <a href={instagramUrl} target="_blank" rel="noreferrer">
